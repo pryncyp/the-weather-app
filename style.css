@@ -96,3 +96,7 @@ form {
   transition: all 200ms ease-in-out;
   font-family: "Ubuntu", sans-serif;
 }
+.coded-by {
+  font-size: 8px;
+  text-align: center;
+}
