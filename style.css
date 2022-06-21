@@ -89,7 +89,7 @@ form {
   margin-left: auto;
   border-radius: 40px;
 }
-.button-current:hover {
+#button-current:hover {
   border: 1px solid #eeeeee;
   margin-left: auto;
   border-radius: 40px;
