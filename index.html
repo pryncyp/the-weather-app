@@ -1,10 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>The Weather App - check the weather everywhere in the world!</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png"
+    />
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+  <body>
+    <div class="container">
+      <main>
+      <h1>The Weather App</h1>
+      <form class="total-input">
+            <input
+              class="search"
+              type="text"
+              placeholder="Enter a city"
+              autocomplete="off"
+              autofocus="on"
+              id="enter-city"
+            />
+            <input
+              class="search-button"
+              type="submit"
+              value="search"
+              id="search-city"
+            />
+            <button id="button-current">
+              current
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="row justify-content-center">
+         <div class="col-2">
+          <p class="emoji">⛅</p>
+          <p class="current-weather">Sunny</p>
+        </div>
+           <div class="col-4">
+          <span class="current-temp" id="#current-temp">16°</span><span id="cel-fah"> <a href="#" id="celsius-link">°C </a>/ <a href="#" id="fahrenheit-link"> F°</a> </span>
+        </div>
+        <div class="col-4">
+          <p class="city" id="current-city">Amsterdam</p>
+          <p class="current-date" id="#current-date"> Thursday, 13:15</p>
+        </div>
+      </div>
+    </div>
+    <section class="weekdays">
+    <div class="row justify-content-center">
+      <div class="col-2">
+        <p>16° / 10°</p>
+        <p>⛅</p>
+        <p>Mon</p>
+      </div>
+      <div class="col-2">
+        <p">18° / 12°</p>
+        <p>⛅</p>
+        <p>Tue</p>
+      </div>
+      <div class="col-2">
+        <p">20° / 15°</p>
+        <p>🌧</p>
+        <p>Wed</p>
+      </div>
+      <div class="col-2">
+        <p>16° / 14°</p>
+        <p>🌦</p>
+        <p>Thu</p>
+      </div>
+      <div class="col-2">
+        <p>15° / 10°</p>
+        <p>⛅</p>
+        <p>Fri</p>
+      </div>
+    </div>
+  </section>
+</main>  
+  </html>
+
+  <script src="src/index.js"></script>
+  </body>
 </html>
