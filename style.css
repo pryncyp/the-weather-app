@@ -89,3 +89,10 @@ form {
   margin-left: auto;
   border-radius: 40px;
 }
+.button-current:hover {
+  border: 1px solid #eeeeee;
+  margin-left: auto;
+  border-radius: 40px;
+  transition: all 200ms ease-in-out;
+  font-family: "Ubuntu", sans-serif;
+}
