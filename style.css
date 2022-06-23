@@ -1,5 +1,5 @@
 body {
-  max-width: 700px;
+  max-width: 800px;
   position: fixed;
 }
 .whole-website {
@@ -39,9 +39,18 @@ form {
   margin-top: -15px;
 }
 #current-weather {
-  font-size: 13px;
+  font-size: 11px;
   text-transform: capitalize;
-  text-align: center;
+  text-align: left;
+  position: static;
+  margin-top: -6px;
+}
+
+#wind {
+  font-size: 11px;
+  text-align: left;
+  position: static;
+  margin-top: -6px;
 }
 
 .current-temp {
