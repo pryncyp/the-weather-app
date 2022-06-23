@@ -30,6 +30,8 @@ function displayWeatherCondition(response) {
   document.querySelector(".current-temp").innerHTML = Math.round(
     response.data.main.temp
   );
+  let currentWeather = document.querySelector("#current-weather");
+  currentWeather.innerHTML = response.data.weather[0].description;
 }
 function searchCity(city) {
   let apiKey = "38a06bd9c736078109704ba679efbd58";
