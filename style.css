@@ -39,8 +39,7 @@ form {
   margin-bottom: 2px;
 }
 #current-weather {
-  font-size: 12px;
-  padding: 0px 5px;
+  font-size: 13px;
   text-transform: capitalize;
 }
 .current-temp {
