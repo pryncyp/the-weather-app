@@ -39,8 +39,9 @@ form {
   margin-top: -15px;
 }
 #current-weather {
-  font-size: 15px;
+  font-size: 13px;
   text-transform: capitalize;
+  text-align: center;
 }
 .current-temp {
   text-align: left;
