@@ -32,6 +32,12 @@ function displayWeatherCondition(response) {
   );
   let currentWeather = document.querySelector("#current-weather");
   currentWeather.innerHTML = response.data.weather[0].description;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute("alt", response.data.weather[0].description);
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 function searchCity(city) {
   let apiKey = "38a06bd9c736078109704ba679efbd58";
