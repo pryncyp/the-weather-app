@@ -63,7 +63,6 @@ function showTemperature(response) {
   let currTempe = document.querySelector("#current-temp");
   let temperature = Math.round(response.data.main.temp);
   celsiusTemperature = response.data.main.temp;
-
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
   currTempe.innerHTML = `${temperature}°C`;
 }
@@ -71,8 +70,6 @@ function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
-let searchForm = document.querySelector(".total-input");
-searchForm.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#button-current");
 currentLocationButton.addEventListener("click", getCurrentLocation);
@@ -101,5 +98,8 @@ fahrenheitLink.addEventListener("click", displayFahrenheit);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsius);
+
+let searchForm = document.querySelector(".total-input");
+searchForm.addEventListener("submit", handleSubmit);
 
 searchCity("Amsterdam");
