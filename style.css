@@ -41,7 +41,7 @@ form {
 #current-weather {
   font-size: 11px;
   text-transform: capitalize;
-  text-align: left;
+  text-align: center;
   position: static;
   margin-top: -6px;
 }
