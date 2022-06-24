@@ -36,6 +36,7 @@ function displayWeatherCondition(response) {
   windElement.innerHTML = `Wind speed ${Math.round(
     response.data.wind.speed
   )} km/h`;
+  celsiusTemperature = response.data.main.temp;
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute("alt", response.data.weather[0].description);
   iconElement.setAttribute(
