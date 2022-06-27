@@ -89,6 +89,11 @@ form {
   position: fixed;
 }
 
+.mini-weather-img {
+  margin: 0 auto;
+  display: block;
+}
+
 #cel-fah {
   font-size: 16px;
   float: right;
