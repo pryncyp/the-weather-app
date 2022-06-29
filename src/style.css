@@ -79,8 +79,12 @@ form {
   border-radius: 40px;
 }
 
-.temp-min-week {
-  color: gray;
+.weather-forecast-date {
+  font-weight: bold;
+}
+
+.weather-forecast-temperature-min {
+  color: grey;
 }
 .font-size-temp {
   font-size: 10px;
