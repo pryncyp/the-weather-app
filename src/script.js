@@ -25,6 +25,36 @@ function formatDate(currentDate) {
 let dateLine = document.querySelector(".current-date");
 dateLine.innerHTML = formatDate(currentDate);
 
+function displayForecast() {
+  let forecastElement = document.querySelector(".weekdays");
+
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="col-2">
+        <div class="weather-forecast-date">${day}</div>
+        <img
+          src="http://openweathermap.org/img/wn/50d@2x.png"
+          alt=""
+          width="42"
+        />
+        <div class="weather-forecast-temperatures">
+          <span class="weather-forecast-temperature-max"> 18° </span>
+          <span class="weather-forecast-temperature-min"> 12° </span>
+        </div>
+      </div>
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
+
 function displayWeatherCondition(response) {
   document.querySelector(".city").innerHTML = response.data.name;
   document.querySelector(".current-temp").innerHTML = Math.round(
@@ -104,3 +134,4 @@ let searchForm = document.querySelector(".total-input");
 searchForm.addEventListener("submit", handleSubmit);
 
 searchCity("Amsterdam");
+displayForecast();
